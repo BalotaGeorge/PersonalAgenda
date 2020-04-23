@@ -15,7 +15,7 @@ namespace AgendaPersonala
         public List<Person> PeopleInvolved;
         public string Details()
         {
-            return $"{Name}, {Description}, {StartDate.ToShortDateString()}, {EndDate.ToShortDateString()}";
+            return $"{Name}, {Description}, {StartDate.ToString()}, {EndDate.ToString()}";
         }
     }
 }
