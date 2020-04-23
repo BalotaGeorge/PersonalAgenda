@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace AgendaPersonala
 {
-    class Activity
+    public class Activity
     {
         public string Name;
         public string Description;
         public DateTime StartDate;
         public DateTime EndDate;
         public List<Person> PeopleInvolved;
+        public string Details()
+        {
+            return $"{Name}, {Description}, {StartDate.ToShortDateString()}, {EndDate.ToShortDateString()}";
+        }
     }
 }

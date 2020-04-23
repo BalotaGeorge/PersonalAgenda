@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace AgendaPersonala
 {
-    class Person
+    public class Person
     {
         public string LastName;
         public string FirstName;
         public DateTime BirthDate;
         public string EmailAddress;
         public Agenda Agenda;
+        public string Name()
+        {
+            return $"{LastName} {FirstName}";
+        }
+        public string Details()
+        {
+            return $"{Name()}, {BirthDate.ToShortDateString()}, {EmailAddress}";
+        }
     }
 }

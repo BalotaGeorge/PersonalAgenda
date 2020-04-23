@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace AgendaPersonala
 {
-    class Agenda
+    public class Agenda
     {
-        List<Activity> Activities;
+        public List<Activity> Activities;
+        public Person Owner;
     }
 }
