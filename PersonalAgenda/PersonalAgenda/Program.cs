@@ -11,12 +11,21 @@ namespace PersonalAgenda
     {
         static void Main(string[] args)
         {
-            Person george = System.CreatePerson("Balota", "George", new DateTime(2000, 5, 23), "george.balota@yahoo.com");
-            Activity work =  george.CreateActivity("Daily Work", "Some stuff", DateTime.Now, DateTime.Now.AddHours(1));
-            Activity morework = System.CreateActivity("Work", "Some more stuff", DateTime.Now, DateTime.Now.AddHours(2));
+            Person george = System.CreatePerson("Balota", "George", 
+                new DateTime(2000, 5, 23), 
+                "george.balota@yahoo.com");
+            Activity work =  george.CreateActivity("Daily Work", "Some stuff", 
+                DateTime.Now, 
+                DateTime.Now.AddHours(1));
+            Activity morework = System.CreateActivity("Work", 
+                "Some more stuff", 
+                DateTime.Now, 
+                DateTime.Now.AddHours(2));
             Console.WriteLine();
 
-            Person mark = System.CreatePerson("Gobu", "Mark", new DateTime(1990, 2, 10), "mark.gobu@gmail.com");
+            Person mark = System.CreatePerson("Gobu", "Mark", 
+                new DateTime(1990, 2, 10), 
+                "mark.gobu@gmail.com");
             mark.AddActivity(work);
             mark.AddActivity(morework);
             Console.WriteLine();
